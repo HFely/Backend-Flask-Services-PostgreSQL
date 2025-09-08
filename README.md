@@ -77,15 +77,17 @@ pip install -r requirements.txt
 ---
 
 ## 🗄️ Migraciones de base de datos
-- **flask db init**
-- **flask db migrate -m "Initial migration"**
-- **flask db upgrade**
-
+```bash
+flask db init
+flask db migrate -m "Initial migration"
+flask db upgrade
+```
 ---
 
 ## ▶️ Ejecutar el servidor
-- python run.py
-
+```bash
+python run.py
+```
 
 La aplicación estará disponible en:
 - 👉 http://127.0.0.1:5000
