@@ -93,23 +93,29 @@ La aplicación estará disponible en:
 ---
 
 ## 📡 Endpoints principales
-- 🔐 Autenticación
-- Método	Endpoint	Descripción
-- POST	/auth/register	Registro de usuario
-- POST	/auth/login	Inicio de sesión y generación de token
-- GET	/auth/logout	Cierre de sesión (pendiente revocación)
+
+### 🔐 Autenticación
+| Método | Endpoint         | Descripción                               |
+|--------|------------------|-------------------------------------------|
+| POST   | `/auth/register` | Registro de usuario                       |
+| POST   | `/auth/login`    | Inicio de sesión y generación de token    |
+| GET    | `/auth/logout`   | Cierre de sesión *(pendiente revocación)* |
 
 ---
 
 ## 🔑 Seguridad con JWT
 
-El login devuelve un token JWT. Envíalo en cada solicitud protegida:
+El login devuelve un **token JWT**.  
+Ese token debe enviarse en el header de cada petición protegida:
 
+```http
 Authorization: Bearer <tu_token>
+```
 
 ---
 
 ## 📂 Estructura del proyecto
+```bash
 BackendFlask/
 │── app/
 │   ├── __init__.py        # Inicialización de la app Flask
@@ -122,7 +128,7 @@ BackendFlask/
 │── run.py                 # Punto de entrada de la aplicación
 │── requirements.txt       # Dependencias del proyecto
 │── .env                   # Variables de entorno (ignorado en git)
-
+```
 ---
 
 ## ✅ Recomendaciones
