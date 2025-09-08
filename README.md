@@ -61,9 +61,9 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 ```
-##📄 Variables de entorno (.env)
+## 📄 Variables de entorno (.env)
 
-Crea un archivo .env en la raíz con:
+- Crea un archivo .env en la raíz con:
 
 - **SECRET_KEY=tu_clave_secreta**
 - **JWT_SECRET_KEY=tu_clave_jwt**
@@ -76,14 +76,14 @@ Crea un archivo .env en la raíz con:
 
 ---
 
-##🗄️ Migraciones de base de datos
+## 🗄️ Migraciones de base de datos
 - **flask db init**
 - **flask db migrate -m "Initial migration"**
 - **flask db upgrade**
 
 ---
 
-##▶️ Ejecutar el servidor
+## ▶️ Ejecutar el servidor
 - python run.py
 
 
@@ -92,7 +92,7 @@ La aplicación estará disponible en:
 
 ---
 
-##📡 Endpoints principales
+## 📡 Endpoints principales
 - 🔐 Autenticación
 - Método	Endpoint	Descripción
 - POST	/auth/register	Registro de usuario
@@ -101,7 +101,7 @@ La aplicación estará disponible en:
 
 ---
 
-##🔑 Seguridad con JWT
+## 🔑 Seguridad con JWT
 
 El login devuelve un token JWT. Envíalo en cada solicitud protegida:
 
@@ -109,7 +109,7 @@ Authorization: Bearer <tu_token>
 
 ---
 
-##📂 Estructura del proyecto
+## 📂 Estructura del proyecto
 BackendFlask/
 │── app/
 │   ├── __init__.py        # Inicialización de la app Flask
@@ -125,7 +125,7 @@ BackendFlask/
 
 ---
 
-##✅ Recomendaciones
+## ✅ Recomendaciones
 
 - **Usa Postman o Insomnia para probar endpoints.**
 
